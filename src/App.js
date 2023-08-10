@@ -1,38 +1,47 @@
-import "./App.css";
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import Preloader from "../src/components/Pre";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume/ResumeNew";
 import {
   BrowserRouter as Router,
-  Routes,
   Route,
-  Navigate,
+  Routes,
+  Navigate
 } from "react-router-dom";
-
+import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
-
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Preloader from "./components/Preloader";
-import ScrollTop from "./components/ScrollTop";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, setLoad] = useState(true);
+  const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoad(false);
-    }, 3000);
-    return () => clearTimeout(timer); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+      upadateLoad(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App">
-        <ScrollTop />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
