@@ -28,9 +28,6 @@ function AboutCard() {
             <li className="about-activity">
               <ImArrowDownRight2 /> Travelling
             </li>
-            <li className="about-activity">
-              <ImArrowDownRight2 /> Eating (of course :P)
-            </li>
           </ul>
         </blockquote>
       </Card.Body>

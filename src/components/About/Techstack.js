@@ -8,16 +8,9 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang, TbBrandFlutter } from "react-icons/tb";
+import { SiNextdotjs } from "react-icons/si";
+import { TbBrandFlutter, TbSql } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -49,7 +42,7 @@ function Techstack() {
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <TbSql />
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
