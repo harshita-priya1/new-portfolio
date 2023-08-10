@@ -52,7 +52,6 @@ function Projects() {
               title="The Soil App"
               description="An android application that use ML models for detecting soil type with an image and creating a database with corresponding location data."
               ghLink="https://github.com/soumyajit4419/Editor.io"
-              // demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
@@ -63,7 +62,6 @@ function Projects() {
               title="My portfolio website"
               description="A portfolio website to showcase my skills, projects and blogs."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
-              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
         </Row>
