@@ -41,7 +41,7 @@ function Projects() {
               isBlog={false}
               title="Just Do It"
               description="A simple Todo App to keep a track of your daily tasks and lets you just do it!."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              ghLink="https://github.com/harshita-priya1/just-do-it"
             />
           </Col>
 
@@ -61,7 +61,7 @@ function Projects() {
               isBlog={false}
               title="My portfolio website"
               description="A portfolio website to showcase my skills, projects and blogs."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
+              ghLink="https://github.com/harshita-priya1/new-portfolio"
             />
           </Col>
         </Row>
