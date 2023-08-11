@@ -46,7 +46,7 @@ function Projects() {
               isBlog={false}
               title="The Soil App"
               description="An android application that use ML models for detecting soil type with an image and creating a database with corresponding location data."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
+              ghLink="https://github.com/harshita-priya1/the-soil-app-frontend"
             />
           </Col>
 
