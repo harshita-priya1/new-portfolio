@@ -13,7 +13,8 @@ function Home2() {
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>ABOUT ME</h1>
             <p className="home-about-body">
-              I started coding when I was in my high school.
+              I am a Frontend developer with the goals to be an accomplished
+              Full Stack developer in the near future.
               <br />
               <br />I am aware of languages like
               <i>
