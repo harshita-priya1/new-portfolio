@@ -31,7 +31,7 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            Download
+            Download Resume
           </Button>
         </Row>
       </Container>
