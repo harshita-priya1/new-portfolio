@@ -2,10 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiFillInstagram, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { portfolioData } from "../../data/portfolioData";
 
 function Home2() {
+  const { profile, specialties } = portfolioData;
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -13,36 +16,27 @@ function Home2() {
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>ABOUT ME</h1>
             <p className="home-about-body">
-              I am a Frontend developer with the goals to be an accomplished
-              Full Stack developer in the near future.
-              <br />
-              <br />I am aware of languages like
-              <i>
-                <b className="purple"> C++, Javascript and Python. </b>
-              </i>
+              I am currently working as a{" "}
+              <b className="purple">{profile.title}</b>, building product flows
+              across <b className="purple">web, mobile, and APIs</b>.
               <br />
               <br />
-              My field of Interests are &nbsp;
-              <i>
-                <b className="purple">Mobile and web app development </b> and
-                also in areas related to{" "}
-                <b className="purple">Machine Learning.</b>
-              </i>
+              My recent work has focused on shipping consistent experiences in{" "}
+              <b className="purple">Angular and Flutter</b>, while supporting
+              them with <b className="purple">Node.js, Express, and databases</b>
+              .
               <br />
-              <br />I usually work with{" "}
-              <i>
-                <b className="purple">Flutter and React</b>
-              </i>{" "}
-              for Front-End and
-              <i>
-                <b className="purple"> Node.js, express</b>
-              </i>
-              and
-              <i>
-                <b className="purple">MongoDB</b>
-              </i>
-              &nbsp; for Back-End development.
+              <br />
+              I care about <b className="purple">clean implementation</b>, fewer
+              regressions, and features that stay maintainable after launch.
             </p>
+            <Row className="specialty-grid">
+              {specialties.map((specialty) => (
+                <Col md={6} key={specialty} className="specialty-col">
+                  <div className="specialty-card">{specialty}</div>
+                </Col>
+              ))}
+            </Row>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -64,7 +58,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/harshita-priya1"
+                  href={profile.github}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -75,7 +69,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/harshita-priya-192955212/"
+                  href={profile.linkedin}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -86,18 +80,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/harshita_priya_"
-                  style={{ color: "white" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="mailto:harshitapriyaph5@gmail.com"
+                  href={`mailto:${profile.email}`}
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"

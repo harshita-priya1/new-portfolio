@@ -1,11 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { portfolioData } from "../../data/portfolioData";
 
 function Type() {
   return (
     <Typewriter
       options={{
-        strings: ["Web Developer", "ML Enthusiast", "Flutter Developer"],
+        strings: portfolioData.typewriterRoles,
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
