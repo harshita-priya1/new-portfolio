@@ -27,7 +27,7 @@ function Home() {
 
               <p className="hero-tagline">{profile.tagline}</p>
 
-              <div style={{ padding: "10px 50px 0", textAlign: "left" }}>
+              <div className="hero-type">
                 <Type />
               </div>
 
@@ -49,7 +49,7 @@ function Home() {
 
               <Row className="hero-metrics">
                 {heroStats.map((item) => (
-                  <Col md={4} sm={4} xs={12} key={item.label} className="metric-col">
+                  <Col lg={4} md={6} xs={12} key={item.label} className="metric-col">
                     <div className="metric-card">
                       <span className="metric-label">{item.label}</span>
                       <strong>{item.value}</strong>

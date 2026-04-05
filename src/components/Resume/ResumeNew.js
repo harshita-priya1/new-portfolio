@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/harshitaresume.pdf";
+import pdf from "../../Assets/harshita_resume_onepage.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { portfolioData } from "../../data/portfolioData";
@@ -13,8 +13,18 @@ function ResumeNew() {
   const { profile, experience } = portfolioData;
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const pageWidth =
+    width > 1200 ? 900 : Math.max(Math.min(width - (width > 768 ? 140 : 36), 900), 280);
 
   return (
     <div>
@@ -39,8 +49,8 @@ function ResumeNew() {
           </div>
         </div>
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document file={pdf} className="d-flex justify-content-center resume-document">
+            <Page pageNumber={1} width={pageWidth} className="resume-page" />
           </Document>
         </Row>
 

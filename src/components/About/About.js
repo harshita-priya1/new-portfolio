@@ -51,7 +51,7 @@ function About() {
         <Github />
 
         <Row className="resume-insights">
-          <Col md={8} className="resume-left">
+          <Col lg={8} className="resume-left">
             <h1 className="project-heading">
               Professional <strong className="purple">Experience</strong>
             </h1>
@@ -72,7 +72,7 @@ function About() {
               ))}
             </div>
           </Col>
-          <Col md={4} className="resume-right">
+          <Col lg={4} className="resume-right">
             <div className="detail-panel">
               <h1 className="project-heading">
                 Education <strong className="purple">& Wins</strong>

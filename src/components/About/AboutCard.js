@@ -18,13 +18,14 @@ function AboutCard() {
             <span className="purple">{profile.title}</span>.
             <br />
             <br />
-            I graduated from{" "}
+            I graduated in <span className="purple">{education.graduationYear}</span>{" "}
+            from{" "}
             <span className="purple">{education.institution}</span> with a{" "}
             <span className="purple">{education.degree}</span> and{" "}
             <span className="purple">{education.detail}</span>.
             <br />
             <br />
-            Outside engineering, these are the things that keep me grounded:
+            Outside work, these are the things that keep me grounded:
           </p>
           <ul>
             {personal.map((item) => (

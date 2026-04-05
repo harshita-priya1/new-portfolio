@@ -21,7 +21,7 @@ function Home2() {
               across <b className="purple">web, mobile, and APIs</b>.
               <br />
               <br />
-              My recent work has focused on shipping consistent experiences in{" "}
+              My recent work has been focused on shipping consistent experiences in{" "}
               <b className="purple">Angular and Flutter</b>, while supporting
               them with <b className="purple">Node.js, Express, and databases</b>
               .

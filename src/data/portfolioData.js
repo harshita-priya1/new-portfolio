@@ -3,19 +3,19 @@ export const portfolioData = {
     name: "Harshita Priya",
     location: "Bokaro, India",
     basedIn: "Bengaluru, India",
-    title: "Software Development Engineer (Full Stack)",
+    title: "Software Developer (Full Stack)",
     tagline: "Building reliable product flows across web, mobile, and APIs.",
     summary:
       "I am a full stack engineer focused on turning product requirements into stable, user-facing features. My recent work spans Angular and Flutter frontends, Node.js and Express APIs, authentication flows, and performance-minded frontend architecture.",
     about:
       "I enjoy working across the stack when the product needs it, especially where a feature has to stay consistent between web and mobile. I care about maintainable code, fewer regressions, and clean handoffs for the next iteration.",
-    email: "harshitapriyaph5@gmail.com",
+    email: "harshita.priya.dev@gmail.com",
     github: "https://github.com/harshita-priya1",
     linkedin: "https://www.linkedin.com/in/harshita-priya-192955212/",
     portfolioRepo: "https://github.com/harshita-priya1/new-portfolio",
   },
   typewriterRoles: [
-    "Software Development Engineer",
+    "Software Developer",
     "Full Stack Developer",
     "Angular, React, Flutter Engineer",
   ],
@@ -45,7 +45,7 @@ export const portfolioData = {
       title: "Software Development Engineer (Full Stack)",
       company: "Cashvisory",
       location: "Bengaluru, India",
-      period: "Current role",
+      period: "Jan 2024 - Present",
       bullets: [
         "Built a self-serve Book a Call flow across Angular, Node.js/Express APIs, and Calendly integrations to replace manual scheduling.",
         "Led web-to-mobile parity across Angular and Flutter for order placement, payments, order details, and financial graphs.",
@@ -90,6 +90,7 @@ export const portfolioData = {
   education: {
     institution: "Birla Institute of Technology, Mesra, Ranchi",
     period: "2019 - 2023",
+    graduationYear: "2023",
     degree: "B.Tech, Civil Engineering",
     detail: "CGPA: 8.84/10",
   },
@@ -98,7 +99,7 @@ export const portfolioData = {
   ],
   personal: [
     "Sketching",
-    "Reading books",
+    "Badminton",
     "Travelling",
   ],
 };
